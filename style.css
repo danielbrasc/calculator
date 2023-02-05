@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: #807ECE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  background-color: #2D2A37;
+  width: 35.6rem;
+  height: 56.6rem;
+  border-radius: 2.8rem;
+}
+
+#operation {
+  margin: 5.4rem 3.2rem 2.6rem 5.3rem;
+}
+
+#operation #historic {
+  font-size: 2rem;
+  color: #6B6B6B;
+  text-align: right;
+  margin-bottom: .8rem;
+}  
+
+#result {
+  display: flex;
+  justify-content: space-between  ;
+}
+
+#result span {
+  font-size: 3.6rem;
+  font-weight: 200;
+  color: #6B6B6B;
+}
+
+#result span:last-child {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #EBEBEB;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  margin: 0 3.2rem 3.2rem 3.2rem;
+}
+
+#buttons * {
+  gap: 1.2rem;
+  border-radius: 50%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 6.4rem;
+  height: 6.4rem;
+  font-size: 2.4rem;
+  background: #2D2A37;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06)
+}
+
+.buttons-group-1, .buttons-group-2,
+.buttons-group-3, .buttons-group-4 {
+  display: flex;
+  flex-direction: column;;
+}
+
+.buttons-group-2, .buttons-group-3, .buttons-group-4 {
+  margin-left: 1.2rem;
+}
+
+.buttons-group-1 button, .buttons-group-2 button, 
+.buttons-group-3 button, .buttons-group-4 button {
+  color: #EBEBEB;
+}
+
+.buttons-group-1 button:first-child {
+  color: #975DFA;
+}
+
+.buttons-group-4 button {
+  background: #462878;
+}
+
+.buttons-group-4 button:last-child {
+  background: #7F45E2;
+}
